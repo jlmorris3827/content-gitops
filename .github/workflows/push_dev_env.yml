@@ -9,7 +9,7 @@ jobs:
       steps:
          - name: call custom deploy action
            id: deploy
-           uses: jlmorris3827/deployment_actions@test-branch
+           uses: jlmorris3827/deployment-actions@test-branch
            with: 
                username: user1
                password: pass1
