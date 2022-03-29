@@ -2,7 +2,18 @@ on:
   push:
     branches:
       - dev
-      
- jobs:
-    start_on_dev:
+    
+jobs:
+  start_on_dev:
+      runs-on: ubuntu-latest
+      steps:
+         - name: call custom deploy action
+           id: deploy
+           uses: jlmorris3827/deployment_actions@test-branch
+           with: 
+               username: user1
+               password: pass1
+           
+         
+         
         
