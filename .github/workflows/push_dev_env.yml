@@ -13,7 +13,6 @@ jobs:
            with: 
                username: user1
                password: pass1
-           
          - name: show action results
            run: echo "RESULT {{ steps.deploy.outputs.result }}"
          
